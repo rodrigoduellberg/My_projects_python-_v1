@@ -1,0 +1,62 @@
+print('Olá, essa é a nossa calculadora.\n'
+     '\n'
+      'Diferente né? Mas prometo que sou legal igual as outras!\n'
+      'Então vamos lá!\n')
+print(20 * '-')
+print()
+
+while True:
+    numero_1 = input('Digite um número: ')
+    numero_1 = float(numero_1)
+    numero_2 = input("Digite outro número: ")
+    numero_2 = float(numero_2)
+    print()
+    sinal = input('Deseja usar qual dos operadores abaixo:\n'
+                  '"+" para adição\n'
+                  '"-" para subtração\n'
+                  '"*" para multiplicação\n'
+                  '"/" para divisão\n'
+                  '\n'
+                  'Escolha a sua opção: ')
+      
+    if sinal == '+':
+      resultado = numero_1 + numero_2
+      print()
+      print(f'O resultado da soma é {resultado}')
+      print()
+
+    
+    elif sinal == '-':
+      resultado = numero_1 - numero_2
+      print()
+      print(f'O resultado da subtração é {resultado}')
+      print()
+      
+
+    
+    elif sinal == '*':
+      resultado = numero_1 * numero_2
+      print()
+      print(f'O resultado da multiplicação é {resultado}')
+      print()
+
+    
+    elif sinal == '/':
+      resultado = numero_1 / numero_2
+      print()
+      print(f'O resultado da divisão é {resultado}')
+      print()
+      
+
+    else:
+      print()
+      print('Digite um operador válido!')
+      print()
+      
+      
+    end = input("Deseja fazer outra conta? [s]im ou [n]ão? ")
+    
+    if end.upper().startswith("n"):
+        print("Ok encerramos a calculadora")
+        break
+      
